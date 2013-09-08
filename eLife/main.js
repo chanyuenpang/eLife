@@ -31,7 +31,7 @@ var cocos2dApp = cc.Application.extend({
         this.startScene = scene;
         cc.COCOS2D_DEBUG = this.config['COCOS2D_DEBUG'];
         cc.initDebugSetting();
-        cc.setup(this.config['tag'], 800, 800);
+        cc.setup(this.config['tag'], 800, 1200);
         cc.AppController.shareAppController().didFinishLaunchingWithOptions();
     },
     applicationDidFinishLaunching:function () {
@@ -39,8 +39,8 @@ var cocos2dApp = cc.Application.extend({
         var director = cc.Director.getInstance();
 
         var screenSize = cc.EGLView.getInstance().getFrameSize();
-        var resourceSize = cc.size(800, 800);
-        var designSize = cc.size(800, 800);
+        var resourceSize = cc.size(800, 1200);
+        var designSize = cc.size(800, 1200);
 
         var searchPaths = [];
         var resDirOrders = [];
@@ -54,8 +54,8 @@ var cocos2dApp = cc.Application.extend({
                 resDirOrders.push("HD");
             }
             else {
-                resourceSize = cc.size(400, 400);
-                designSize = cc.size(400, 400);
+                resourceSize = cc.size(400, 600);
+                designSize = cc.size(400, 600);
                 resDirOrders.push("Normal");
             }
         }

@@ -15,7 +15,7 @@ el.MainLayer = cc.Layer.extend({
     init : function () {
 	    game.Map.setMapSize(cc.size(30,30));
 	    game.Map.setTileSize(cc.size(24,24));
-		game.Map.setPosition(cc.p(40,40));
+		game.Map.setPosition(cc.p(40,440));
 
 	    this.lyGrid = el.GridLayer.create(game.Map);
 	    this.addChild(this.lyGrid);
