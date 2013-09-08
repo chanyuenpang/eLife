@@ -37,16 +37,17 @@
         engineDir:'../cocos2d/',
         //SingleEngineFile:'',
         appFiles:[
-	        'src/underscore-min.js',
-	        'src/GameFlow.js',
-	        'src/map.js',
-            'src/resource.js',
-	        'src/GridLayer.js',
-	        'src/LifeLayer.js',
-	        'src/LiveBehavior.js',
-	        'src/MoveBehavior.js',
-	        'src/LifeSprite.js',
-            'src/MainLayer.js'//add your own files in order here
+	        'eLife/src/underscore-min.js',
+	        'eLife/src/GameFlow.js',
+	        'eLife/src/map.js',
+            'eLife/src/resource.js',
+	        'eLife/src/GridLayer.js',
+	        'eLife/src/LifeLayer.js',
+	        'eLife/src/LiveBehavior.js',
+	        'eLife/src/MoveBehavior.js',
+	        'eLife/src/LifeSprite.js',
+            'eLife/src/MainLayer.js',//add your own files in order here
+	        'eLife/main.js'
         ]
     };
 
