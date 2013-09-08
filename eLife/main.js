@@ -45,7 +45,7 @@ var cocos2dApp = cc.Application.extend({
         var searchPaths = [];
         var resDirOrders = [];
 
-        searchPaths.push("eLife/res");
+        searchPaths.push(this.config['searchPath']);
         cc.FileUtils.getInstance().setSearchPaths(searchPaths);
 
         var platform = cc.Application.getInstance().getTargetPlatform();

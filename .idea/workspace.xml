@@ -4,7 +4,7 @@
     <list default="true" id="b459d2b6-7ed7-4469-bebf-6d75846211b5" name="Default" comment="" />
     <ignored path="Cocos2d-html5-v2.1.5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378661367933" ignored="false" />
+    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378662045653" ignored="false" />
     <file path="/GameFlow.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378585150498" ignored="false" />
     <file path="/build.xml" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378538229674" ignored="false" />
     <file path="/map.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378575826165" ignored="false" />
@@ -21,8 +21,9 @@
     <file path="/MainLayer.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378656844725" ignored="false" />
     <file path="/LifeLayer.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378658558043" ignored="false" />
     <file path="/LiveBehavior.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378657690592" ignored="false" />
-    <file path="/cocos2d.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378620142762" ignored="false" />
+    <file path="/cocos2d.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378661955131" ignored="false" />
     <file path="/MoveBehavior.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378656689450" ignored="false" />
+    <file path="/main.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378662001269" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cocos2d.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eLife/cocos2d.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="38" selection-start="1429" selection-end="1429" vertical-scroll-proportion="-0.9130435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eLife/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainLayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="66" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+            <state line="33" column="32" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,15 +70,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eLife/src/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="5" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LiveBehavior.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/src/LiveBehavior.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="-11.354838">
+            <state line="23" column="30" selection-start="802" selection-end="802" vertical-scroll-proportion="0.59320045">
               <folding />
             </state>
           </provider>
@@ -151,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/eLife/index.html" />
         <option value="$PROJECT_DIR$/eLife/src/myApp.js" />
         <option value="localhost/eLife/src/MainLayer.js" />
         <option value="localhost/eLife/src/GridLayer.js" />
@@ -164,9 +137,10 @@
         <option value="$PROJECT_DIR$/eLife/src/LifeSprite.js" />
         <option value="$PROJECT_DIR$/eLife/src/LifeLayer.js" />
         <option value="$PROJECT_DIR$/eLife/src/LiveBehavior.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/eLife/main.js" />
         <option value="$PROJECT_DIR$/eLife/cocos2d.js" />
+        <option value="$PROJECT_DIR$/eLife/cocos2d-out.js" />
+        <option value="$PROJECT_DIR$/eLife/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -459,11 +433,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cocos2d/base_nodes/CCNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3271" column="63" selection-start="123205" selection-end="123205" vertical-scroll-proportion="0.5206259" />
-      </provider>
-    </entry>
     <entry file="http://localhost/eLife/src/map.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
@@ -483,7 +452,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/GridLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="961" selection-end="961" vertical-scroll-proportion="0.7505669" />
+        <state line="41" column="13" selection-start="961" selection-end="961" vertical-scroll-proportion="0.7505669">
+          <folding>
+            <element signature="e#0#158#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/map.js">
@@ -496,13 +469,6 @@
     <entry file="file://$PROJECT_DIR$/cocos2d/layers_scenes_transitions_nodes/CCLayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="668" column="32" selection-start="19622" selection-end="19622" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="66" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/MoveBehavior.js">
@@ -549,23 +515,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/eLife/cocos2d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="615" selection-end="615" vertical-scroll-proportion="-11.354838">
+        <state line="35" column="0" selection-start="1598" selection-end="1620" vertical-scroll-proportion="-6.935484">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eLife/cocos2d-out.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="14" selection-start="3297" selection-end="3297" vertical-scroll-proportion="0.50473934">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
+        <state line="47" column="52" selection-start="2121" selection-end="2121" vertical-scroll-proportion="1.2065344">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/cocos2d.js">
+    <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="1429" selection-end="1429" vertical-scroll-proportion="-0.9130435">
+        <state line="33" column="32" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="30" selection-start="802" selection-end="802" vertical-scroll-proportion="0.59320045">
           <folding />
         </state>
       </provider>
