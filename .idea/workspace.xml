@@ -18,7 +18,7 @@
     <file path="$PROJECT_DIR$/extensions/PluginX/samples/HelloSocial/cocos2d.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378560549890" ignored="false" />
     <file path="$PROJECT_DIR$/template/build.xml" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378560549890" ignored="false" />
     <file path="$PROJECT_DIR$/template/cocos2d.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378560549890" ignored="false" />
-    <file path="/MainLayer.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378656844725" ignored="false" />
+    <file path="/MainLayer.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378663927359" ignored="false" />
     <file path="/LifeLayer.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378658558043" ignored="false" />
     <file path="/LiveBehavior.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378657690592" ignored="false" />
     <file path="/cocos2d.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378661955131" ignored="false" />
@@ -43,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainLayer.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainLayer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+            <state line="19" column="58" selection-start="395" selection-end="395" vertical-scroll-proportion="0.2613769">
               <folding />
             </state>
           </provider>
@@ -64,7 +64,7 @@
       <file leaf-file-name="LifeSprite.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/src/LifeSprite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="22" selection-start="3945" selection-end="3945" vertical-scroll-proportion="0.0">
+            <state line="180" column="24" selection-start="4582" selection-end="4582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridLayer.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GridLayer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/src/GridLayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.77712953">
+            <state line="42" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#158#0" expanded="false" />
               </folding>
@@ -157,10 +157,10 @@
         <option value="$PROJECT_DIR$/eLife/cocos2d.js" />
         <option value="$PROJECT_DIR$/eLife/cocos2d-out.js" />
         <option value="$PROJECT_DIR$/eLife/main.js" />
-        <option value="$PROJECT_DIR$/eLife/src/MainLayer.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/eLife/index.html" />
         <option value="$PROJECT_DIR$/eLife/src/GridLayer.js" />
+        <option value="$PROJECT_DIR$/eLife/src/MainLayer.js" />
       </list>
     </option>
   </component>
@@ -540,20 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/src/LifeSprite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="22" selection-start="3945" selection-end="3945" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/MoveBehavior.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="20" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
@@ -577,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/src/LifeLayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="44" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="27" selection-start="0" selection-end="733" vertical-scroll-proportion="-9.225806">
@@ -600,10 +579,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/GridLayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.77712953">
+        <state line="42" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#158#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eLife/src/LifeSprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="24" selection-start="4582" selection-end="4582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eLife/src/LifeLayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="44" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eLife/src/MainLayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="58" selection-start="395" selection-end="395" vertical-scroll-proportion="0.2613769">
+          <folding />
         </state>
       </provider>
     </entry>

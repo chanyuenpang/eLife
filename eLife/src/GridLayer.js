@@ -41,7 +41,6 @@ el.GridLayer = cc.Layer.extend({
 //				this.drawNode.drawDot(this.map.grid2Position(cc.p(i,j)), 5, cc.c4f(1, 1, 1, 0.2));
 //			}
 //		}
-		this.drawNode.drawDot(this.map.grid2Position(cc.p(0,0)), 2000, cc.c4f(0, 0, 0, 1));
 		for( var i = 0; i <= this.map.mapSize.width; i++) {
 			begin = this.map.grid2Position(cc.p(i, 0));
 			begin = cc.pAdd(begin, cc.p(-h/2, h/2));
