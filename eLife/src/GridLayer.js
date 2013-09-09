@@ -25,7 +25,7 @@ el.GridLayer = cc.Layer.extend({
 	init : function(map) {
 		this.map = map;
 		this.drawNode = cc.DrawNode.create();
-		this.addChild(this.drawNode);;
+		this.addChild(this.drawNode);
 	},
 
 	updateGrid : function() {
