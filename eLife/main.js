@@ -55,7 +55,6 @@ var cocos2dApp = cc.Application.extend({
             }
             else {
                 resourceSize = cc.size(400, 600);
-                designSize = cc.size(400, 600);
                 resDirOrders.push("Normal");
             }
         }
