@@ -4,7 +4,7 @@
     <list default="true" id="b459d2b6-7ed7-4469-bebf-6d75846211b5" name="Default" comment="" />
     <ignored path="Cocos2d-html5-v2.1.5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378705529477" ignored="false" />
+    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378706313309" ignored="false" />
     <file path="/GameFlow.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378585150498" ignored="false" />
     <file path="/build.xml" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378538229674" ignored="false" />
     <file path="/map.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378575826165" ignored="false" />
@@ -91,8 +91,10 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="412" selection-end="412" vertical-scroll-proportion="0.1827957">
-              <folding />
+            <state line="22" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="0.40215054">
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -257,7 +259,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="Settings.JavaScript.Linters.ClosureLinter" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cocos2d" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -560,8 +562,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="412" selection-end="412" vertical-scroll-proportion="0.1827957">
-          <folding />
+        <state line="22" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="0.40215054">
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
