@@ -13,7 +13,7 @@ el.MainLayer = cc.Layer.extend({
 	lyGrid : null,
 
     init : function () {
-	    game.Map.setMapSize(cc.size(30,30));
+	    game.Map.setMapSize(cc.size(20,20));
 	    game.Map.setTileSize(cc.size(24,24));
 		game.Map.setPosition(cc.p(40,440));
 
@@ -36,7 +36,7 @@ el.MainLayer = cc.Layer.extend({
 	    enemy.setLiveBehavior(new el.LiveBehavior.HurryMother());
 	    enemy.setMoveBehavior(el.MoveBehavior.getRandomBehavior());
 	    enemy.setAttackBehavior(el.AttackBehavior.getRandomBehavior());
-	    game.LifeLayer.addLife2Layer(enemy, cc.p(25,25));
+	    game.LifeLayer.addLife2Layer(enemy, cc.p(15,15));
 
 	    game.LifeLayer.changeIndicateColor(el.LifeSprite.ColorFlag.IndicateAttackBehavior);
     }

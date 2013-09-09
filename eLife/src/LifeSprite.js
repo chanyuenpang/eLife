@@ -268,7 +268,7 @@ el.LifeSprite.Race = {
 el.LifeSprite.create = function(race) {
 	var life = new el.LifeSprite();
 	life.init(cc.c4b(255,255,255,255), game.Map.tileSize.width, game.Map.tileSize.height);
-	life.setOpacity(10);
+	life.setOpacity(30);
 	life.setRace(race);
 	return life;
 };
