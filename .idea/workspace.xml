@@ -4,7 +4,7 @@
     <list default="true" id="b459d2b6-7ed7-4469-bebf-6d75846211b5" name="Default" comment="" />
     <ignored path="Cocos2d-html5-v2.1.5.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378702808133" ignored="false" />
+    <file path="/index.html" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378705529477" ignored="false" />
     <file path="/GameFlow.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378585150498" ignored="false" />
     <file path="/build.xml" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378538229674" ignored="false" />
     <file path="/map.js" changelist="b459d2b6-7ed7-4469-bebf-6d75846211b5" time="1378575826165" ignored="false" />
@@ -79,19 +79,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="44" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.50209206">
+            <state line="56" column="25" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="606" selection-end="606" vertical-scroll-proportion="-13.076923">
+            <state line="10" column="47" selection-start="412" selection-end="412" vertical-scroll-proportion="0.1827957">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eLife/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+            <state line="6" column="43" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/eLife/src/GridLayer.js" />
         <option value="$PROJECT_DIR$/eLife/src/MainLayer.js" />
         <option value="$PROJECT_DIR$/eLife/cocos2d-out.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/eLife/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -270,7 +270,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig" serverName="localhost" serverId="057fefb0-6da4-4393-9db5-4e343b3fdd1d" autoUpload="true">
+  <component name="PublishConfig" serverName="localhost" serverId="057fefb0-6da4-4393-9db5-4e343b3fdd1d">
     <servers>
       <server id="057fefb0-6da4-4393-9db5-4e343b3fdd1d">
         <serverdata>
@@ -500,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/GridLayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
@@ -535,9 +528,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/eLife/src/LiveBehavior.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="606" selection-end="606" vertical-scroll-proportion="-13.076923">
+        <state line="85" column="24" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eLife/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="43" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
@@ -551,16 +551,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/src/LiveBehavior.js">
+    <entry file="file://$PROJECT_DIR$/eLife/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="24" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0">
+        <state line="56" column="25" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eLife/main.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.50209206">
+        <state line="10" column="47" selection-start="412" selection-end="412" vertical-scroll-proportion="0.1827957">
           <folding />
         </state>
       </provider>
