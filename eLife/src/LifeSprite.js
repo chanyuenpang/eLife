@@ -11,6 +11,17 @@ var game = game = game || {};
 el.LifeSprite = cc.LayerColor.extend({
 
 	/**
+	 * Race defines two lives is friend or enemy
+	 * @type {Number}
+ 	 */
+	_race : -1,
+	setRace : function(race){
+		this._race = race;
+	},
+	getRace : function() { return this._race; },
+	isEnemy : function(life) { return life.getRace() != this._race; },
+
+	/**
 	 * @type el.LiveBehavior.Basic
 	 */
 	_liveBehavior : null,
@@ -18,8 +29,7 @@ el.LifeSprite = cc.LayerColor.extend({
 		this._liveBehavior = behavior;
 	},
 	copyLiveBehavior : function() {
-		if (this._liveBehavior) return this._liveBehavior.clone();
-		return null;
+		return this._liveBehavior.clone();
 	},
 
 	/**
@@ -30,8 +40,19 @@ el.LifeSprite = cc.LayerColor.extend({
 		this._moveBehavior = behavior;
 	},
 	copyMoveBehavior : function() {
-		if (this._moveBehavior) return this._moveBehavior.clone();
-		return null;
+		return this._moveBehavior.clone();
+	},
+
+	/**
+	 * @type el.AttackBehavior.Basic
+	 */
+	_attackBehavior : null,
+	setAttackBehavior : function(behavior) {
+		if (!behavior) cc.log('error');
+		this._attackBehavior = behavior;
+	},
+	copyAttackBehavior : function(behavior) {
+		return this._attackBehavior.clone();
 	},
 
 	/**
@@ -55,29 +76,40 @@ el.LifeSprite = cc.LayerColor.extend({
 
 	_isDead : false,
 
+	_aimScale : 1.0,
+	/**
+	 * Could not set a sprite's scale directly as it's always animating by scale.
+	 * Set the aim scale and this sprite will change it's scale when it's done animating.
+	 * @param {Number} s
+	 */
+	setAimScale : function(s) {
+		this._aimScale = s;
+	},
+	scale2AimScale : function() {
+		this.setScale(this._aimScale);
+	},
+
 	wakeUp : function() {
-		var scaleBack = cc.ScaleTo.create(0.15, 0.85);
-		var scaleTo = cc.ScaleTo.create(0.15, 1);
+		var scaleBack = cc.ScaleBy.create(0.15, 0.8);
+		var scaleTo = cc.ScaleBy.create(0.15, 1.25);
 		var delay = cc.DelayTime.create(0.25);
-		var repeat = cc.RepeatForever.create(cc.Sequence.create(scaleBack, scaleTo, delay));
+		var setScale = cc.CallFunc.create(this.scale2AimScale, this);
+		var repeat = cc.RepeatForever.create(cc.Sequence.create(scaleBack, scaleTo, setScale, delay));
 		this.runAction(repeat);
 
 		this.schedule(this.behave, 2.0, cc.REPEAT_FOREVER, 1.0);
 	},
 
+	/**
+	 * Behavior action
+	 */
 	behave : function() {
-		if (!this._isDead && this._liveBehavior) this._liveBehavior.newDay(this);
-		if (!this._isDead && this._moveBehavior) this._moveBehavior.move(this);
+		if (!this._isDead) this._liveBehavior.newDay(this);
+		if (!this._isDead) this._moveBehavior.move(this);
+		if (!this._isDead) this._attackBehavior.attack(this);
 	},
 
 	/* Functions for Live Behavior */
-
-	/**
-	 * @param {Number} 0-100 hp
-	 */
-	setHP : function(hp) {
-		this.setOpacity(hp*2.5);
-	},
 
 	produceChild : function() {
 		var neighbor = new Array();
@@ -93,7 +125,7 @@ el.LifeSprite = cc.LayerColor.extend({
 		var len = neighbor.length;
 		if (len == 4) return;  // no empty room for new child
 
-		var child = el.LifeSprite.create();
+		var child = el.LifeSprite.create(this._race);
 
 		var rand = Math.floor(cc.RANDOM_0_1()*1000)%8;
 		if (rand >= 4) child.setLiveBehavior(this.copyLiveBehavior());
@@ -104,6 +136,11 @@ el.LifeSprite = cc.LayerColor.extend({
 		if (rand >= 4) child.setMoveBehavior(this.copyMoveBehavior());
 		else if (neighbor[rand]) child.setMoveBehavior(neighbor[rand].copyMoveBehavior());
 		else child.setMoveBehavior(el.MoveBehavior.getRandomBehavior());
+
+		rand = Math.floor(cc.RANDOM_0_1()*1000)%8;
+		if (rand >= 4) child.setAttackBehavior(this.copyAttackBehavior());
+		else if (neighbor[rand]) child.setAttackBehavior(neighbor[rand].copyAttackBehavior());
+		else child.setAttackBehavior(el.AttackBehavior.getRandomBehavior());
 
 		game.LifeLayer.addLife2Layer(child, game.Map.grid2Direction(this._grid, emptyDir));
 	},
@@ -147,22 +184,46 @@ el.LifeSprite = cc.LayerColor.extend({
 		return false;
 	},
 
+	/* Functions for Attack Behavior */
+
+	/**
+	 * @param {el.LifeSprite} enemy
+	 * @param {el.AttackBehavior.Basic} attackBehavior
+	 */
+	getAttacked : function(enemy, attackBehavior) {
+		this._attackBehavior.getAttacked(this, enemy, attackBehavior);
+	},
+
 	/* */
 
 	/**
 	 * @param {el.LifeSprite.ColorFlag}} flag
 	 */
 	updateColor : function(flag) {
-		switch (flag) {
-			case el.LifeSprite.ColorFlag.IndicateLiveBehavior:
-				this.setColor(this._liveBehavior.getColor());
-				break;
-			case el.LifeSprite.ColorFlag.IndicateMoveBehavior:
-				this.setColor(this._moveBehavior.getColor());
-				break;
-			case el.LifeSprite.ColorFlag.Default:
-				this.setColor(cc.c3b(255,255,255));
-				break;
+		if (this._race == el.LifeSprite.Race.Lightia) {
+			switch (flag) {
+				case el.LifeSprite.ColorFlag.IndicateLiveBehavior:
+					this.setColor(this._liveBehavior.getColor());
+					break;
+				case el.LifeSprite.ColorFlag.IndicateMoveBehavior:
+					this.setColor(this._moveBehavior.getColor());
+					break;
+				case el.LifeSprite.ColorFlag.IndicateAttackBehavior:
+					this.setColor(this._attackBehavior.getColor());
+					break;
+				case el.LifeSprite.ColorFlag.Default:
+					this.setColor(el.LifeSprite.Race.getColor(this._race));
+					break;
+			}
+		} else {
+			switch (flag) {
+				case el.LifeSprite.ColorFlag.Default:
+					this.setColor(el.LifeSprite.Race.getColor(this._race));
+					break;
+				default :
+					this.setColor(el.Colors3B.White);
+					break;
+			}
 		}
 	},
 
@@ -172,12 +233,42 @@ el.LifeSprite = cc.LayerColor.extend({
 el.LifeSprite.ColorFlag = {
 	Default : -1,
 	IndicateLiveBehavior : 0,
-	IndicateMoveBehavior : 1
+	IndicateMoveBehavior : 1,
+	IndicateAttackBehavior : 2
 };
 
-el.LifeSprite.create = function() {
+el.LifeSprite.Race = {
+	Lightia : 0,
+	Yudi : 1,
+	Segxa : 2,
+	Mozikra : 3,
+
+	/**
+	 * @param {Number} race
+	 * @returns {cc.Color3B}
+	 */
+	getColor : function(race) {
+		switch (race) {
+			case el.LifeSprite.Race.Lightia:
+				return el.Colors3B.White;
+			case el.LifeSprite.Race.Yudi:
+				return el.Colors3B.Red;
+			case el.LifeSprite.Race.Segxa:
+				return el.Colors3B.Yellow;
+			case el.LifeSprite.Race.Mozikra:
+				return el.Colors3B.Green;
+		}
+	}
+};
+
+/**
+ * @param {Number} race
+ * @returns {el.LifeSprite}
+ */
+el.LifeSprite.create = function(race) {
 	var life = new el.LifeSprite();
 	life.init(cc.c4b(255,255,255,255), game.Map.tileSize.width, game.Map.tileSize.height);
-	life.setOpacity(30);
+	life.setOpacity(10);
+	life.setRace(race);
 	return life;
 };

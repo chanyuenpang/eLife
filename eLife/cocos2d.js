@@ -38,14 +38,15 @@
         engineDir:'../cocos2d/',
         //SingleEngineFile:'',
         appFiles:[
+	        'src/resource.js',
 	        'src/underscore-min.js',
 	        'src/GameFlow.js',
 	        'src/map.js',
-            'src/resource.js',
 	        'src/GridLayer.js',
 	        'src/LifeLayer.js',
 	        'src/LiveBehavior.js',
 	        'src/MoveBehavior.js',
+	        'src/AttackBehavior.js',
 	        'src/LifeSprite.js',
             'src/MainLayer.js'//add your own files in order here
         ]

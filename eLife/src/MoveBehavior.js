@@ -53,7 +53,7 @@ el.MoveBehavior.Basic = yc.GameFlow.extend({
 	},
 
 	getColor : function() {
-		return cc.c3b(255,255,255);
+		return el.Colors3B.White;
 	}
 });
 
@@ -69,7 +69,7 @@ el.MoveBehavior.LoneRanger = el.MoveBehavior.Basic.extend({
 	},
 
 	getColor : function() {
-		return cc.c3b(192,30,30);
+		return el.Colors3B.Red;
 	}
 });
 
@@ -85,7 +85,7 @@ el.MoveBehavior.Social = el.MoveBehavior.Basic.extend({
 	},
 
 	getColor : function() {
-		return cc.c3b(30,192,30);
+		return el.Colors3B.Green;
 	}
 
 });

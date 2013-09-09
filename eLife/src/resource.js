@@ -18,3 +18,13 @@ var g_resources = [
 
     //effect
 ];
+
+var el = el = el = {};
+
+el.Colors3B = {
+	Red : cc.c3b(192, 30, 30),
+	Green : cc.c3b(30, 192, 30),
+	Blue : cc.c3b(40, 60, 192),
+	Yellow : cc.c3b(192, 192, 30),
+	White : cc.c3b(255, 255, 255)
+};

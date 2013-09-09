@@ -26,10 +26,19 @@ el.MainLayer = cc.Layer.extend({
 	    game.LifeLayer = el.LifeLayer.create();
 	    this.addChild(game.LifeLayer);
 
-	    var life = el.LifeSprite.create();
-	    life.setLiveBehavior(el.LiveBehavior.getRandomBehavior());
+	    var life = el.LifeSprite.create(el.LifeSprite.Race.Lightia);
+	    life.setLiveBehavior(new el.LiveBehavior.HurryMother());
 	    life.setMoveBehavior(el.MoveBehavior.getRandomBehavior());
-	    game.LifeLayer.addLife2Layer(life, cc.p(6,5));
+	    life.setAttackBehavior(el.AttackBehavior.getRandomBehavior());
+	    game.LifeLayer.addLife2Layer(life, cc.p(5,5));
+
+	    var enemy = el.LifeSprite.create(el.LifeSprite.Race.Mozikra);
+	    enemy.setLiveBehavior(new el.LiveBehavior.HurryMother());
+	    enemy.setMoveBehavior(el.MoveBehavior.getRandomBehavior());
+	    enemy.setAttackBehavior(el.AttackBehavior.getRandomBehavior());
+	    game.LifeLayer.addLife2Layer(enemy, cc.p(25,25));
+
+	    game.LifeLayer.changeIndicateColor(el.LifeSprite.ColorFlag.IndicateAttackBehavior);
     }
 });
 

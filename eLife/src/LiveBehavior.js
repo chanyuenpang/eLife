@@ -54,11 +54,11 @@ el.LiveBehavior.Basic = yc.GameFlow.extend({
 			life.die();
 			return;
 		}
-		life.setHP(100 - Math.abs(this._age - this._maxAge/2) * this._unitHP);
+		life.setOpacity(255 - (Math.abs(this._age - this._maxAge/2) * this._unitHP) * 2.2);
 	},
 
 	getColor : function(){
-		return cc.c3b(192, 192, 30);
+		return el.Colors3B.Yellow;
 	}
 });
 
@@ -83,7 +83,7 @@ el.LiveBehavior.LongLiver = el.LiveBehavior.Basic.extend({
 	},
 
 	getColor : function(){
-		return cc.c3b(40, 60, 192);
+		return el.Colors3B.Blue;
 	}
 });
 
@@ -104,7 +104,7 @@ el.LiveBehavior.HurryMother = el.LiveBehavior.Basic.extend({
 	},
 
 	getColor : function(){
-		return cc.c3b(30, 192, 30);
+		return el.Colors3B.Green;
 	}
 });
 
