@@ -43,20 +43,20 @@
 		frameRate:60,
 		searchPath:'eLife/res',
 		tag:'gameCanvas', //the dom element to run cocos2d on
-		engineDir:'../cocos2d/',
+		engineDir:'./cocos2d/',
 		//SingleEngineFile:'',
 		appFiles:[
-			'eLife/src/underscore-min.js',
-			'eLife/src/GameFlow.js',
-			'eLife/src/map.js',
-			'eLife/src/resource.js',
-			'eLife/src/GridLayer.js',
-			'eLife/src/LifeLayer.js',
-			'eLife/src/LiveBehavior.js',
-			'eLife/src/MoveBehavior.js',
-			'eLife/src/LifeSprite.js',
-			'eLife/src/MainLayer.js',//add your own files in order here
-			'eLife/main.js'
+			'./eLife/src/underscore-min.js',
+			'./eLife/src/GameFlow.js',
+			'./eLife/src/map.js',
+			'./eLife/src/resource.js',
+			'./eLife/src/GridLayer.js',
+			'./eLife/src/LifeLayer.js',
+			'./eLife/src/LiveBehavior.js',
+			'./eLife/src/MoveBehavior.js',
+			'./eLife/src/LifeSprite.js',
+			'./eLife/src/MainLayer.js',//add your own files in order here
+			'./eLife/main.js'
 		]
 	};
 
@@ -83,7 +83,7 @@
 			s.src = c.SingleEngineFile;
 		}
 		else if (c.engineDir && !c.SingleEngineFile) {
-			s.src = c.engineDir + 'platform/jsloader.js';
+			s.src = c.engineDir + '/platform/jsloader.js';
 		}
 		else {
 			alert('You must specify either the single engine file OR the engine directory in "cocos2d.js"');
