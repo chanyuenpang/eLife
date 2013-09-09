@@ -59,7 +59,7 @@ el.AttackBehavior.Basic = yc.GameFlow.extend({
 
 	updateHP : function(life) {
 		if (this._HP <= 0) life.die();
-		life.setAimScale(this._HP / 50.0);
+		life.setAimScale(this._HP/200.0);
 	},
 
 	getColor : function() {
