@@ -48,7 +48,7 @@
       <file leaf-file-name="LifeSprite.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eLife/src/LifeSprite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="21" selection-start="6895" selection-end="6895" vertical-scroll-proportion="0.8396226">
+            <state line="237" column="2" selection-start="6202" selection-end="6202" vertical-scroll-proportion="0.37789473">
               <folding>
                 <element signature="e#368#393#0" expanded="false" />
                 <element signature="e#511#551#0" expanded="false" />
@@ -112,12 +112,7 @@
         <entry file="file://$PROJECT_DIR$/eLife/src/AttackBehavior.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="61" column="37" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#160#0" expanded="false" />
-                <element signature="e#471#511#0" expanded="false" />
-                <element signature="e#535#579#0" expanded="false" />
-                <element signature="e#583#623#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -212,7 +207,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,6 +259,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,10 +274,10 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="localhost" serverId="057fefb0-6da4-4393-9db5-4e343b3fdd1d">
     <servers>
@@ -381,19 +376,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19530416" sideWeight="0.47148675" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13607258" sideWeight="0.67107946" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19530416" sideWeight="0.5203666" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19786096" sideWeight="0.47556007" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13582888" sideWeight="0.67107946" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19786096" sideWeight="0.52443993" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.389738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19237058" sideWeight="0.32978722" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,7 +424,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -518,18 +513,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/cocos2d-out.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.2954304">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="48" column="38" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.2954304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/platform/CCTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="3" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.33262485">
-          <folding />
-        </state>
+        <state line="43" column="3" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.33262485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/cocos2d.js">
@@ -556,12 +545,7 @@
     <entry file="file://$PROJECT_DIR$/eLife/src/AttackBehavior.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="37" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#160#0" expanded="false" />
-            <element signature="e#471#511#0" expanded="false" />
-            <element signature="e#535#579#0" expanded="false" />
-            <element signature="e#583#623#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eLife/src/LifeSprite.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="21" selection-start="6895" selection-end="6895" vertical-scroll-proportion="0.8396226">
+        <state line="237" column="2" selection-start="6202" selection-end="6202" vertical-scroll-proportion="0.37789473">
           <folding>
             <element signature="e#368#393#0" expanded="false" />
             <element signature="e#511#551#0" expanded="false" />
